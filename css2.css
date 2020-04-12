@@ -1,0 +1,67 @@
+<style type="text/css">
+		body {
+			font-family:"幼圆";		
+		}
+		button,input{
+			border-radius:9px;
+		}
+		button{
+			padding:2px;
+			margin: 3px;
+		}
+		tr,td{
+			border :1px blue solid;
+			background-color: skyblue;
+			padding:2px;
+			margin: 3px;
+		}
+		#head{
+			background-color: red;
+			display: block;
+			position: relative;
+		}
+			.h_left{
+				padding-left: 40px;
+				color: white;
+				display: inline-block;
+				border :1px red solid;
+			}
+			.h_middle{
+				color: white;
+				display: inline-block;
+				margin:0 3px;
+			}
+				.h_middle button{
+					border :1px white solid;
+					background-color: white;
+				}
+
+			.h_right{
+				padding-right: 40px;
+				float: right;
+				color: white;
+				display: inline-block;
+				border :1px red solid;
+			}
+
+		#body{
+
+		}
+			#body form{
+				float: left;
+				margin: 0 30px;
+
+			}
+			#body button{
+				border: 0px;
+				background-color: white;
+			}
+
+		td{
+			background-color: pink;
+		}
+
+
+		
+
+	</style>

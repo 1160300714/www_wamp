@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		<style type="text/css">
+		body {
+		}
+		input{
+			border-radius:9px;
+		}
+		button{
+			padding:2px;
+			margin: 3px;
+		}
+		tr,td{
+			border :1px blue solid;
+			background-color: skyblue;
+			padding:2px;
+			margin: 3px;
+		}
+		img{
+			display: block;
+			margin:581px auto 0 auto;
+			width: 1000px;
+		}
+		#head{
+			display: block;
+			position: relative;
+
+			border-radius:10px;
+			width: 1000px;
+			color: white;
+			margin:0 auto 30px auto;
+			background-color: red;
+			font-family:"幼圆";	
+		}
+		#head button{
+			border: 0px;
+			background-color: red;
+			color: white;
+			font-size: 16px;
+		}
+		#head button:hover{
+			color: pink;
+			padding-bottom: 3px;
+			border-bottom: 1px pink solid;
+		}
+			.h_left{
+				padding-left: 30px;
+				display: inline-block;
+			}
+			
+			.h_right{
+				padding-right: 20px;
+				float: right;
+				position: relative;
+				top: 10px;
+				display: inline-block;
+			}
+
+			.pai{
+				display: inline-block;
+				margin :0 55px;
+			}
+			.left{
+				float: left;
+				width: 400px;
+				margin-left: 265px; 
+			}
+			.right{
+				float: right;
+				width: 450px;
+				margin-right: 260px;
+			}
+
+		#body{
+			margin-top:35px;
+		}
+
+		#body button{
+			border:1 solid black;
+			FONT-SIZE: 9pt; 
+			FONT-STYLE: normal; 
+			FONT-VARIANT: normal; 
+			FONT-WEIGHT: normal; 
+			HEIGHT: 23px; 
+			LINE-HEIGHT: normal
+		}
+		#body button:hover{
+			color: red;
+		}
+		.left{
+			border: 3px #FA7A5B solid;
+			border-radius:25px;
+			padding:20px;
+		}
+		.right{
+			border: 3px #FA7A5B solid;
+			border-radius:25px;
+			padding:20px 0 20px 20px;
+		}
+
+		
+
+	</style>
+
+
+		
+
+	</style>
+
+</head>
+<body>
+	
+
+	<div id="head">
+		<div class="h_left">
+			<h1>数据云音乐</h1>
+		</div>
+
+		<form action="song_volumeTOP10.php" method="get" class="pai">
+			<button  >歌曲排行榜</button>
+		</form>
+		<form action="edition_volumeTOP10.php" method="get" class="pai">
+			<button  >专辑排行榜</button>
+		</form>
+		<form action="singer_volumeTOP10.php" method="get" class="pai">
+			<button  >歌手排行榜</button>
+		</form>
+
+
+		<div class="h_right">
+			<h2>登录/注册</h2>
+		</div>
+
+	</div>
+
+
+	<div id="body">
+
+
+		<div class="left">
+			<div class="middle">
+				<form action="style_find.php" method="get">
+					风格类型：<input type="text" name="text">
+					<button  >TOP10查询</button>
+				</form>
+			</div>
+
+			<div class="middle">
+				<form action="singer_song_find.php" method="get">
+					查询该歌手的歌曲：<input type="text" name="text">
+					<button  >查询</button>
+				</form>
+			</div>
+
+			<div class="middle">
+				<form action="singer_edition_find.php" method="get">
+					查询该歌手的专辑：<input type="text" name="text">
+					<button  >查询</button>
+				</form>
+			</div>
+
+			<div class="middle">
+				<form action="song_comment_find.php" method="get">
+					查询该歌曲的评论：<input type="text" name="text">
+					<button  >查询</button>
+				</form>
+			</div>
+
+			<br><br><br>
+
+			<div >
+				<form action="song++.php" method="get">
+					增加歌曲：歌曲ID<input type="text" name="songID"><br>
+					歌曲名<input type="text" name="name"><br>
+					播放量<input type="text" name="volume"><br>
+					风格<input type="text" name="style"><br>
+					语言<input type="text" name="language"><br>
+					VIP<input type="text" name="VIP"><br>
+					日期<input type="text" name="date"><br>
+					歌手ID<input type="text" name="singerID"><br>
+					专辑ID<input type="text" name="editionID">
+					<button  >OK</button>
+				</form>
+			</div>
+			<div >
+				<form action="song--.php" method="get">
+					删除歌曲：歌曲ID<input type="text" name="songID">
+					<button  >OK</button>
+				</form>
+			</div>
+			<div>
+				<form action="song_find.php" method="get">
+					查询歌曲：歌曲ID<input type="text" name="songID">
+					<button  >OK</button>
+				</form>
+			</div>
+
+
+		</div>
+
+		
+
+		
+		<div class="right">
+
+			<div >
+				<form action="comment++.php" method="get">
+					增加评论：用户ID<input type="text" name="singerID"><br>
+					用户名<input type="text" name="name"><br>
+					歌曲ID<input type="text" name="songID"><br>
+					评论<input type="text" name="comment">
+					<button  >OK</button>
+				</form>
+			</div>
+
+			<br><br><br>
+
+			<div >
+				<form action="edition++.php" method="get">
+					增加专辑：专辑ID<input type="text" name="editionID"><br>
+					专辑名<input type="text" name="name"><br>
+					歌曲数量<input type="text" name="quantity"><br>
+					播放量<input type="text" name="volume"><br>
+					VIP<input type="text" name="VIP"><br>
+					日期<input type="text" name="date"><br>
+					歌手ID<input type="text" name="singerID">
+					<button  >OK</button>
+				</form>
+			</div>
+			<div>
+				<form action="edition_find.php" method="get">
+					查询专辑：专辑ID<input type="text" name="ID">
+					<button  >OK</button>
+				</form>
+			</div>
+
+			<br>
+
+
+			<div >
+				<form action="play.php" method="get">
+					模拟播放歌曲：歌曲ID<input type="text" name="songID">
+					<button  >播放</button>
+				</form>
+			</div>
+
+
+
+
+			
+		</div>
+
+
+
+	
+
+
+	</div>
+
+
+	<div>
+		<img src="img.png">
+	</div>
+
+	
+
+	
+
+
+
+
+
+	<script type="text/javascript">
+		window.onload=function (argument) {
+
+			var btn = document.getElementById('btn');
+			var h2 = document.getElementById('h2');
+
+
+
+
+
+
+			// 异步
+			// var xhr = new XMLHttpRequest();
+			// xhr.open("get","php.php?",true);
+			// xhr.send(null);
+			// xhr.onreadystatechange = function (argument) {
+			// 	h2.innerHTML = xhr.responseText;
+
+			// 	// body...
+			// }
+
+
+
+
+
+			// var btn = document.getElementById('btn');
+			// var h2 = document.getElementById('h2');
+			// btn.onclick=function (argument) {
+			// 	h2.innerHTML = "asdasd";
+			// 	// body...
+			// }
+
+		}
+
+			
+
+	</script>
+</body>
+</html>
